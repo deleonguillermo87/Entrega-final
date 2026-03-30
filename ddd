@@ -1,0 +1,7 @@
+elif opcion == "3":
+        id_buscado = int(input("ingresar id a buscar : "))
+        encontrado = buscar_estudiante(inventario,id_buscado)
+        if encontrado:
+            print("estudiante existente", encontrado)
+        else:
+            print("el estudiante no extiste en el inventario")
