@@ -55,7 +55,7 @@ inventario = [
     {"nombre": "Mouse", "precio": 50, "cantidad": 20}
 ]
 
-💾 Persistencia
+##💾 Persistencia
 
 Guardar CSV
 
@@ -68,7 +68,7 @@ Tienes dos opciones:
 	•	Fusionar datos:
 	•	Suma cantidades
 	•	Actualiza precios
-📊 Menú
+##📊 Menú
 	1.	Agregar producto
 	2.	Mostrar inventario
 	3.	Buscar producto
@@ -78,11 +78,11 @@ Tienes dos opciones:
 	7.	Guardar CSV
 	8.	Cargar CSV
 	9.	Salir
-📌 Notas
+##📌 Notas
 	•	El nombre del producto es único
 	•	Puedes dejar campos vacíos al actualizar
 	•	Maneja validaciones básicas
-👨‍💻 Autor
+##👨‍💻 Autor
 
 Proyecto de práctica en Python enfocado en:
 	•	Listas y diccionarios
