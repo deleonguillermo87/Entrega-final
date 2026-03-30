@@ -5,3 +5,8 @@ elif opcion == "3":
             print("estudiante existente", encontrado)
         else:
             print("el estudiante no extiste en el inventario")
+def buscar_estudiante(inventario,id_buscado):
+    for gestion_estuden in inventario:
+        if gestion_estuden["id_estudiante"] == id_buscado:
+            return gestion_estuden
+    return None
