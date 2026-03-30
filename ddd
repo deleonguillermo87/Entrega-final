@@ -1,12 +1,19 @@
 elif opcion == "3":
-        id_buscado = int(input("ingresar id a buscar : "))
-        encontrado = buscar_estudiante(inventario,id_buscado)
-        if encontrado:
-            print("estudiante existente", encontrado)
-        else:
-            print("el estudiante no extiste en el inventario")
-def buscar_estudiante(inventario,id_buscado):
-    for gestion_estuden in inventario:
+    print("=== BUSCAR ESTUDIANTE ===")
+    
+    id_buscado = int(input("Ingresar ID a buscar: "))
+    
+    encontrado = buscar_estudiante(gestion_estuden, id_buscado)
+    
+    if encontrado is not None:
+        print("Estudiante encontrado:")
+        print(f"ID: {encontrado['id_estudiante']}")
+        print(f"Nombre: {encontrado['nombre']}")
+        print(f"Edad: {encontrado['edad']}")
+    else:
+        print("El estudiante no existe")
+def buscar_estudiante(gestion_estuden, id_buscado):
+    for gestion_estuden in gestion_estuden:
         if gestion_estuden["id_estudiante"] == id_buscado:
             return gestion_estuden
     return None
